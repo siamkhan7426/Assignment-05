@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.raleway{
+  font-family: "Raleway", sans-serif;
+}
+footer {
+  background-color:black;
+  float: left;
+  display: block;
+  width: 100% !important;
+  color: white;
+  margin-top: 120px;
+}
+footer .fo-item h4 {
+  color: white;
+  font-family: Raleway;
+  font-size: 36px;
+  font-weight: 800;
+}
+.fo-item h5 {
+  color: white;
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 600;
+  padding-top: 20px;
+}
+.fo-menu a:hover {
+  color: green;
+  transition: all ease-in-out 300ms;
+}
+
+
+
+hr{
+
+}
