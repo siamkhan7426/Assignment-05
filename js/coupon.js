@@ -12,7 +12,6 @@ function updaTeGrandTotalByUseCoupon(){
         const newGrandTotal = currentGrandTotal - discoutNewOffer;
         setValueById('grand-total', newGrandTotal);
     
-     // ________________add NEW15 coupon discount amount_________________//
      function setDiscountCountonHtmlElement(){
         const discountContainer = document.getElementById('dis-coupon-price');
         const element = `<p>Total discount:</p><p>${discoutNewOffer}</p>BDT`
@@ -20,7 +19,7 @@ function updaTeGrandTotalByUseCoupon(){
         div.classList.add('flex', 'justify-between', 'font-bold');
         div.innerHTML = element;
         discountContainer.appendChild(div);
-        //    ---------------hide coupon button & field----------------------//
+
         const disabledButton = document.getElementById('disable-btn');
         const disabledCouponField = document.getElementById('counpon-apply-field');
             disabledButton.classList.add('hidden');
@@ -34,7 +33,7 @@ function updaTeGrandTotalByUseCoupon(){
             const updateGrandTotal = currentGrandTotal - discountCoupleOffer;
 
             setValueById('grand-total', updateGrandTotal);
-              // ______add Couple 20 coupon discount amount_____//
+      
           function setDiscountCountonHtmlElement(){
             const discountContainer = document.getElementById('dis-coupon-price');
             const element = `<p>Total discount:</p><p>BDT ${discountCoupleOffer}</p>`
@@ -42,7 +41,7 @@ function updaTeGrandTotalByUseCoupon(){
             div.classList.add('flex', 'justify-between', 'font-bold', 'p-3');
             div.innerHTML = element;
             discountContainer.appendChild(div);
-        // ---------------hide coupon button & field----------------------//
+     
             const disabledButton = document.getElementById('disable-btn');
             const disabledCouponField = document.getElementById('counpon-apply-field');
                 disabledButton.classList.add('hidden');
